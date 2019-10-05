@@ -3,7 +3,7 @@ import numpy as np
 
 def wipe_empty_columns(df, max_empty=0.7, exceptions=[]):
     """
-    Removes columns with too many empty values from a dataframe
+    Removes all the columns with too many empty values from a dataframe
 
     Args:
         df: Dataframe to clean
@@ -32,4 +32,3 @@ def wipe_empty_columns(df, max_empty=0.7, exceptions=[]):
                 del df[column_name]
 
     return df
-
